@@ -1,23 +1,4 @@
-function Car ({ fill, length, x, y }) {
-  function increaseX (amt) {
-    this.x += amt
-  }
-
-  function increaseY (amt) {
-    this.y += amt
-  }
-
-  return {
-    increaseX: increaseX,
-    increaseY: increaseY,
-    fill,
-    length,
-    x,
-    y
-  }
-}
-
-class Car2 {
+class Car {
   constructor ({ fill, length, x, y }) {
     this.fill = fill
     this.length = length
@@ -34,4 +15,4 @@ class Car2 {
   }
 }
 
-export default Car2
+export default Car
